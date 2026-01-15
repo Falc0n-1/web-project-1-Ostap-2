@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
       <img
         src="Pictures/ferrari-logo.jpg"
@@ -22,5 +22,63 @@
       <h1>Ferrari Fan Website Form</h1>
       <h2>for real Ferrari fans</h2>
     </header>
-</body>
+    <main>
+      <section>
+        <h2>Ferrari Fan Survey</h2>
+        <form action="" method="get">
+          <!-- Name input -->
+          <label for="name">Name:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            required
+          /><br /><br />
+
+          <!-- Email input -->
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email"
+            required
+          /><br /><br />
+
+          <!-- Favorite Ferrari model -->
+          <label for="model">Favorite Ferrari Model:</label><br />
+          <select id="model" name="model" required>
+            <option value="">--Choose a model--</option>
+            <option value="250GTO">Ferrari 250 GTO</option>
+            <option value="F40">Ferrari F40</option>
+            <option value="Enzo">Ferrari Enzo</option>
+            <option value="LaFerrari">Ferrari LaFerrari</option>
+            <option value="488GTB">Ferrari 488 GTB</option></select
+          ><br /><br />
+
+          <!-- Racing interest -->
+          <label>Are you interested in Ferrari racing events?</label><br />
+          <input type="radio" id="yes" name="racing" value="Yes" required />
+          <label for="yes">Yes</label><br />
+          <input type="radio" id="no" name="racing" value="No" />
+          <label for="no">No</label><br /><br />
+
+          <!-- Comments -->
+          <label for="comments">Comments about Ferrari:</label><br />
+          <textarea
+            id="comments"
+            name="comments"
+            rows="4"
+            cols="50"
+            placeholder="Share your thoughts..."
+          ></textarea
+          ><br /><br />
+
+          <!-- Submit button -->
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
